@@ -38,6 +38,38 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* Hamburger menu icon - only visible on mobile */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: var(--darker-color);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        padding: 1rem 0;
+        gap: 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
 
 /* Navigation Styles */
 .navbar {
