@@ -13,6 +13,9 @@
     <header class="hero-section" id="home">
         <nav class="navbar">
             <div class="nav-container">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <div class="nav-logo">
                     <a href="#home" class="nav-link">
 
@@ -378,6 +381,9 @@
 
 
     <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
