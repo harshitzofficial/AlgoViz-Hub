@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortest Path Visualizer</title>
+    <link rel="stylesheet" href="com.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <br>
+            <h1>Shortest Path Visualizer</h1>
+            <p class="header__subtitle">Visualize how different pathfinding algorithms work</p>
+        </header>
+
+        <main class="main">
+            <div class="controls">
+                <div class="controls__section">
+                    <label class="form-label" for="algorithm-select">Algorithm:</label>
+                    <select id="algorithm-select" class="form-control algorithm-select">
+                        <option value="bfs">BFS - Breadth-First Search</option>
+                        <option value="dijkstra">Dijkstra's Algorithm</option>
+                        <option value="bellman-ford">Bellman-Ford Algorithm</option>
+                        <option value="floyd-warshall">Floyd-Warshall Algorithm</option>
+                    </select>
+                </div>
+
+                <div class="controls__section">
+                    <button id="start-btn" class="btn btn--primary">Start Visualization</button>
+                    <button id="clear-btn" class="btn btn--secondary">Clear Grid</button>
+                    <button id="reset-btn" class="btn btn--outline">Reset Path</button>
+                </div>
+
+                <div class="controls__section">
+                    <label class="form-label" for="speed-slider">Speed: <span id="speed-value">5</span></label>
+                    <input type="range" id="speed-slider" class="speed-slider" min="1" max="10" value="5">
+                </div>
+            </div>
+
+            <div class="visualizer">
+                <div class="canvas-container">
+                    <canvas id="grid-canvas" width="600" height="400"></canvas>
+                    <div id="algorithm-info" class="algorithm-info"></div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Statistics</h3>
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <span class="stat-label">Nodes Visited:</span>
+                                    <span id="nodes-visited" class="stat-value">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Path Length:</span>
+                                    <span id="path-length" class="stat-value">0</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Time Taken:</span>
+                                    <span id="time-taken" class="stat-value">0ms</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-label">Status:</span>
+                                    <span id="algorithm-status" class="stat-value status status--info">Ready</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Legend</h3>
+                            <div class="legend">
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: #27ae60;"></div>
+                                    <span>Start Node</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: #e74c3c;"></div>
+                                    <span>End Node</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: #2c3e50;"></div>
+                                    <span>Wall</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color" style="background-color: #8e44ad;"></div>
+                                    <span>Negative Weight</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color visited-color"></div>
+                                    <span>Visited Node</span>
+                                </div>
+                                <div class="legend-item">
+                                    <div class="legend-color path-color"></div>
+                                    <span>Shortest Path</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Instructions</h3>
+                            <div class="instructions">
+                                <p><strong>Left Click:</strong> Toggle wall</p>
+                                <p><strong>Right Click:</strong> Set start point</p>
+                                <p><strong>Ctrl + Click:</strong> Set end point</p>
+                                <p><strong>Shift + Click:</strong> Set negative weight (Bellman-Ford only)</p>
+                                <p><strong>Drag:</strong> Create multiple walls</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Visualizers Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <header class="hero-section" id="home">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#home" class="nav-link">
+
+                    <i class="fas fa-project-diagram"></i>
+                    <span>AlgoViz Hub</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#ALGOS" class="nav-link">Algorithms</a></li>
+                    <li><a href="#visualizers" class="nav-link">Visualizers</a></li>
+                    <li><a href="#theory" class="nav-link">Theory</a></li>
+                    <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Algorithm Visualizers</h1>
+            <p class="hero-subtitle">Interactive platform to visualize algorithms and strengthen problem-solving skills.</p>
+            <div class="hero-buttons">
+                <button class="cta-button primary">
+                    <i class="fas fa-play"></i>
+                    Start Exploring
+                </button>
+                <button class="cta-button secondary">
+                    <i class="fas fa-book"></i>
+                    Learn Theory
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Visualizers Section -->
+        <section id="visualizers" class="visualizers-section">
+            <div class="container">
+                <h2 class="section-title">Interactive Visualizers</h2>
+                <p class="section-subtitle">Explore algorithms through interactive visualizations</p>
+
+                <div class="visualizer-grid">
+                    <!-- Shortest Path Visualizer -->
+                    <div class="visualizer-card">
+                        <div class="card-header">
+                            <i class="fas fa-route card-icon"></i>
+                            <h3>Shortest Path Algorithms</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Visualize and compare different shortest path algorithms including BFS, Dijkstra, Bellman-Ford, and Floyd-Warshall.</p>
+                            <div class="algorithm-tags">
+                                <span class="tag">BFS</span>
+                                <span class="tag">Dijkstra</span>
+                                <span class="tag">Bellman-Ford</span>
+                                <span class="tag">Floyd-Warshall</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="visualizer-btn" onclick="openVisualizer('index1.html')">
+                                <i class="fas fa-external-link-alt"></i>
+                                Launch Visualizer
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- N-Queens Visualizer -->
+                    <div class="visualizer-card">
+                        <div class="card-header">
+                            <i class="fas fa-chess-queen card-icon"></i>
+                            <h3>N-Queens Problem</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Watch the backtracking algorithm solve the classic N-Queens problem step by step on an interactive chessboard.</p>
+                            <div class="algorithm-tags">
+                                <span class="tag">Backtracking</span>
+                                <span class="tag">Recursion</span>
+                                <span class="tag">Constraint Satisfaction</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="visualizer-btn" onclick="openVisualizer('index2.html')">
+                                <i class="fas fa-external-link-alt"></i>
+                                Launch Visualizer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Theory Section -->
+        <section id="theory" class="theory-section">
+            <div class="container">
+                <h2 class="section-title" id="ALGOS">Algorithm Theory & Concepts</h2>
+
+                <!-- Shortest Path Algorithms Theory -->
+                <div class="theory-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-route"></i>
+                        Shortest Path Algorithms
+                    </h3>
+
+                    <div class="algorithm-grid">
+                        <!-- BFS -->
+                        <div class="algorithm-card">
+                            <div class="algorithm-header">
+                                <h4>Breadth-First Search (BFS)</h4>
+                                <div class="complexity-badge">O(V+E)</div>
+                            </div>
+                            <div class="algorithm-body">
+                                <p><strong>Use Case:</strong> Unweighted graphs, finding shortest path with minimum edges</p>
+                                <p><strong>Key Concept:</strong> Explores nodes level by level, guaranteeing shortest path in unweighted graphs</p>
+                                <div class="algorithm-details">
+                                    <h5>How it works:</h5>
+                                    <ul>
+                                        <li>Uses a queue to store nodes to visit</li>
+                                        <li>Visits all neighbors at current depth before moving deeper</li>
+                                        <li>First time a node is reached = shortest path found</li>
+                                    </ul>
+                                </div>
+                                <div class="algorithm-links">
+                                    <a href="https://www.geeksforgeeks.org/shortest-path-unweighted-graph/">Concept</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dijkstra -->
+                        <div class="algorithm-card">
+                            <div class="algorithm-header">
+                                <h4>Dijkstra's Algorithm</h4>
+                                <div class="complexity-badge">O(E + V log V)</div>
+                            </div>
+                            <div class="algorithm-body">
+                                <p><strong>Use Case:</strong> Weighted graphs with non-negative edge weights</p>
+                                <p><strong>Key Concept:</strong> Greedy approach, always selects unvisited node with minimum distance</p>
+                                <div class="algorithm-details">
+                                    <h5>Applications:</h5>
+                                    <ul>
+                                        <li>GPS navigation systems (Google Maps, Waze)</li>
+                                        <li>Network routing protocols</li>
+                                        <li>Game pathfinding</li>
+                                    </ul>
+                                </div>
+                                <div class="algorithm-links">
+                                    <a href="https://www.geeksforgeeks.org/dsa/dijkstras-shortest-path-algorithm-greedy-algo-7/">Concept</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bellman-Ford -->
+                        <div class="algorithm-card">
+                            <div class="algorithm-header">
+                                <h4>Bellman-Ford Algorithm</h4>
+                                <div class="complexity-badge">O(V × E)</div>
+                            </div>
+                            <div class="algorithm-body">
+                                <p><strong>Use Case:</strong> Weighted graphs with negative edge weights</p>
+                                <p><strong>Key Concept:</strong> Dynamic programming approach, can detect negative cycles</p>
+                                <div class="algorithm-details">
+                                    <h5>Advantages over Dijkstra:</h5>
+                                    <ul>
+                                        <li>Handles negative weight edges</li>
+                                        <li>Detects negative cycles</li>
+                                        <li>More versatile but slower</li>
+                                    </ul>
+                                </div>
+                                <div class="algorithm-links">
+                                    <a href="https://www.geeksforgeeks.org/dsa/bellman-ford-algorithm-dp-23/">Concept</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floyd-Warshall -->
+                        <div class="algorithm-card">
+                            <div class="algorithm-header">
+                                <h4>Floyd-Warshall Algorithm</h4>
+                                <div class="complexity-badge">O(V³)</div>
+                            </div>
+                            <div class="algorithm-body">
+                                <p><strong>Use Case:</strong> All-pairs shortest paths in weighted graphs</p>
+                                <p><strong>Key Concept:</strong> Dynamic programming, finds shortest paths between all vertex pairs</p>
+                                <div class="algorithm-details">
+                                    <h5>When to use:</h5>
+                                    <ul>
+                                        <li>Need distances between all node pairs</li>
+                                        <li>Dense graphs where V² ≈ E</li>
+                                        <li>Small to medium-sized graphs</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <br>
+                                <div class="algorithm-links">
+                                    <a href="https://www.geeksforgeeks.org/dsa/floyd-warshall-algorithm-dp-16/">Concept</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- N-Queens Theory -->
+                <div class="theory-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-chess-queen"></i>
+                        N-Queens Problem
+                    </h3>
+
+                    <div class="nqueens-theory">
+                        <div class="theory-card">
+                            <h4>Problem Statement</h4>
+                            <p>Place N queens on an N×N chessboard such that no two queens attack each other. Queens can attack horizontally, vertically, and diagonally.</p>
+
+                            <div class="problem-details">
+                                <h5>Constraints:</h5>
+                                <ul>
+                                    <li>No two queens in the same row</li>
+                                    <li>No two queens in the same column</li>
+                                    <li>No two queens on the same diagonal</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="theory-card">
+                            <h4>Backtracking Solution</h4>
+                            <p>The N-Queens problem is solved using backtracking - a systematic way of trying all possibilities until a valid solution is found.</p>
+
+                            <div class="algorithm-steps">
+                                <h5>Algorithm Steps:</h5>
+                                <ol>
+                                    <li>Start with the first row</li>
+                                    <li>Place a queen in the first safe column</li>
+                                    <li>Move to the next row and repeat</li>
+                                    <li>If no safe position exists, backtrack to previous row</li>
+                                    <li>Continue until all queens are placed or no solution exists</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="theory-card">
+                            <h4>Complexity & Applications</h4>
+                            <div class="complexity-info">
+                                <p><strong>Time Complexity:</strong> O(N!) in worst case</p>
+                                <p><strong>Space Complexity:</strong> O(N) for the solution array</p>
+                            </div>
+
+                            <div class="applications">
+                                <h5>Real-world Applications:</h5>
+                                <ul>
+                                    <li>Resource allocation problems</li>
+                                    <li>Task scheduling with conflicts</li>
+                                    <li>Network design and placement</li>
+                                    <li>VLSI design and circuit placement</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="algorithm-links">
+                                    <a href="https://www.geeksforgeeks.org/dsa/n-queen-problem-backtracking-3/">Concept</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Table -->
+                <div class="comparison-section">
+                    <h3 class="category-title">
+                        <i class="fas fa-balance-scale"></i>
+                        Algorithm Comparison
+                    </h3>
+
+                    <div class="comparison-table-container">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Algorithm</th>
+                                    <th>Time Complexity</th>
+                                    <th>Space Complexity</th>
+                                    <th>Type</th>
+                                    <th>Use Case</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>BFS</td>
+                                    <td>O(V + E)</td>
+                                    <td>O(V)</td>
+                                    <td>Unweighted</td>
+                                    <td>Shortest path, minimum edges</td>
+                                </tr>
+                                <tr>
+                                    <td>Dijkstra</td>
+                                    <td>O(E + V log V)</td>
+                                    <td>O(V)</td>
+                                    <td>Non-negative weights</td>
+                                    <td>GPS, network routing</td>
+                                </tr>
+                                <tr>
+                                    <td>Bellman-Ford</td>
+                                    <td>O(V × E)</td>
+                                    <td>O(V)</td>
+                                    <td>Negative weights allowed</td>
+                                    <td>Negative cycle detection</td>
+                                </tr>
+                                <tr>
+                                    <td>Floyd-Warshall</td>
+                                    <td>O(V³)</td>
+                                    <td>O(V²)</td>
+                                    <td>All-pairs shortest path</td>
+                                    <td>Dense graphs, all distances</td>
+                                </tr>
+                                <tr>
+                                    <td>N-Queens</td>
+                                    <td>O(N!)</td>
+                                    <td>O(N)</td>
+                                    <td>Constraint satisfaction</td>
+                                    <td>Backtracking, scheduling</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Algorithm Visualizers Hub</h4>
+                <p>Interactive learning platform for understanding complex algorithms through visualization.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#visualizers">Visualizers</a></li>
+                    <li><a href="#theory">Theory</a></li>
+                    <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Algorithms</h4>
+                <ul>
+                    <li><a href="index1.html">Shortest Path</a></li>
+                    <li><a href="index2.html">N-Queens</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Me</h4>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:8076148313">+91 8076148313</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:harshit.official.281005@gmail.com">harshit.official.281005@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/harshit-singh-7a209a282/" target="_blank">https://www.linkedin.com/in/harshit-singh-7a209a282/</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Algorithm Visualizers Hub. Created and maintained by <a href="https://www.linkedin.com/in/harshit-singh-7a209a282/" target="_blank">Harshit Singh</a>.</p>
+
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Function to open visualizers
+        function openVisualizer(filename) {
+            window.open(filename, '_blank');
+        }
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Hero buttons functionality
+        document.querySelector('.cta-button.primary').addEventListener('click', function() {
+            document.querySelector('#visualizers').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelector('.cta-button.secondary').addEventListener('click', function() {
+            document.querySelector('#theory').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
