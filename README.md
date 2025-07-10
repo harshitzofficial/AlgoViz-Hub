@@ -7,20 +7,6 @@
 
 ---
 
-## 📖 Table of Contents
-
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Live Demo](#live-demo)
-- [Screenshots](#screenshots)
-- [Tech Stack](#tech-stack)
-- [Algorithms Included](#algorithms-included)
-- [Usage Guide](#usage-guide)
-- [Educational Value](#educational-value)
-- [Contact](#contact)
-
----
-
 ## 🎯 About the Project
 
 **Algo Viz Hub** is an interactive web-based platform designed to help students, educators, and developers visualize and understand fundamental algorithms through engaging animations and real-time interactions. Built with a focus on educational accessibility, this platform transforms abstract algorithmic concepts into visual, understandable experiences.
