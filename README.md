@@ -170,8 +170,8 @@ Got it! Here’s the same section arranged nicely using **plain Markdown syntax*
 
 - 📧 Email: harshit.official.281005@gmail.com
 - 📱 Phone: +91 8076148313
-- 💼 LinkedIn: [Harshit Singh](https://linkedin.com/in/harshit-singh)
-- 🐙 GitHub: [HarshitSingh](https://github.com/harshitsingh)
+- 💼 LinkedIn: [Harshit Singh](www.linkedin.com/in/harshit-singh-7a209a282)
+- 🐙 GitHub: [HarshitSingh](https://github.com/harshitzofficial)
 
 ---
 
