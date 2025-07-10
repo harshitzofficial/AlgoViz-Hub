@@ -13,7 +13,6 @@
 - [Features](#features)
 - [Live Demo](#live-demo)
 - [Screenshots](#screenshots)
-- [Getting Started](#getting-started)
 - [Tech Stack](#tech-stack)
 - [Algorithms Included](#algorithms-included)
 - [Usage Guide](#usage-guide)
@@ -72,83 +71,40 @@
 
 ---
 
-## 📱 Screenshots
-
-- Main dashboard with algorithm selection
-<img width="1913" height="868" alt="image" src="https://github.com/user-attachments/assets/be1941b7-4b54-4d14-8a8a-4a1739b3aef3" />
-<img width="823" height="874" alt="image" src="https://github.com/user-attachments/assets/ab7c290c-8fd9-4001-8d62-8d2640f744fd" />
-
-- Pathfinding visualization in action
-<img width="1913" height="870" alt="image" src="https://github.com/user-attachments/assets/7fdf941c-623c-4001-8a55-a9b283fec22d" />
-<img width="387" height="339" alt="image" src="https://github.com/user-attachments/assets/f03957cd-648d-48d7-98e2-d276d7a85c83" />
-
-
-- N-Queens solver interface
-<img width="1906" height="789" alt="image" src="https://github.com/user-attachments/assets/1e0a0c1d-b0e8-495f-a981-847a3d9d6816" />
-<img width="1588" height="304" alt="image" src="https://github.com/user-attachments/assets/22bd298c-dfc4-4a0b-9909-ae975079dcff" />
-
-
-- Algorithm comparison table
-  <img width="1604" height="662" alt="image" src="https://github.com/user-attachments/assets/dbe09435-8fdc-4707-9e40-113270e38d7a" />
-
+Got it! Here’s the same section arranged nicely using **plain Markdown syntax** (no HTML tags) — ready to copy into your `README.md`:
 
 ---
 
-## 🛠 Getting Started
+## 📱 Screenshots
 
-### Prerequisites
+### 🗂️ Main Dashboard with Algorithm Selection
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Internet connection for live demo
-- OR local web server for development
+![Main Dashboard](https://github.com/user-attachments/assets/be1941b7-4b54-4d14-8a8a-4a1739b3aef3)
 
-### Local Development Setup
+![Algorithm Options](https://github.com/user-attachments/assets/ab7c290c-8fd9-4001-8d62-8d2640f744fd)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/algo-viz-hub.git
-   cd algo-viz-hub
-   ```
+---
 
-2. **Project Structure**
-   ```
-   algo-viz-hub/
-   ├── index.html              # Main landing page
-   ├── index1.html             # Pathfinding visualizer
-   ├── index2.html             # N-Queens solver
-   ├── aboutme.html            # About page
-   ├── css/
-   │   ├── style.css           # Main styles
-   │   ├── pathfinding.css     # Pathfinding specific styles
-   │   └── nqueens.css         # N-Queens specific styles
-   ├── js/
-   │   ├── algorithms/
-   │   │   ├── bfs.js          # BFS implementation
-   │   │   ├── dijkstra.js     # Dijkstra's algorithm
-   │   │   ├── bellmanford.js  # Bellman-Ford algorithm
-   │   │   ├── floydwarshall.js # Floyd-Warshall algorithm
-   │   │   └── nqueens.js      # N-Queens backtracking
-   │   ├── visualizer.js       # Main visualization engine
-   │   └── utils.js            # Utility functions
-   └── assets/
-       ├── images/             # UI images and icons
-       └── docs/               # Documentation assets
-   ```
+### 🧭 Pathfinding Visualization in Action
 
-3. **Run locally**
-   ```bash
-   # Using Python (if installed)
-   python -m http.server 8000
-   
-   # Using Node.js (if installed)
-   npx serve .
-   
-   # Or simply open index.html in your browser
-   ```
+![Pathfinding in Action](https://github.com/user-attachments/assets/7fdf941c-623c-4001-8a55-a9b283fec22d)
 
-4. **Access the application**
-   - Open `http://localhost:8000` in your browser
-   - Navigate through different algorithm visualizations
+![Pathfinding Step](https://github.com/user-attachments/assets/f03957cd-648d-48d7-98e2-d276d7a85c83)
+
+---
+
+### ♟️ N-Queens Solver Interface
+
+![N-Queens Solver](https://github.com/user-attachments/assets/1e0a0c1d-b0e8-495f-a981-847a3d9d6816)
+
+![N-Queens Results](https://github.com/user-attachments/assets/22bd298c-dfc4-4a0b-9909-ae975079dcff)
+
+---
+
+### 📊 Algorithm Comparison Table
+
+![Algorithm Comparison Table](https://github.com/user-attachments/assets/dbe09435-8fdc-4707-9e40-113270e38d7a)
+
 
 ---
 
