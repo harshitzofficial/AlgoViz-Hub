@@ -4,7 +4,6 @@
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-algo--viz--hub.vercel.app-brightgreen)](https://algo-viz-hub.vercel.app/)
 [![Built with](https://img.shields.io/badge/Built%20with-HTML%2FCSS%2FJS-blue)](#tech-stack)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
 ---
 
@@ -19,10 +18,7 @@
 - [Algorithms Included](#algorithms-included)
 - [Usage Guide](#usage-guide)
 - [Educational Value](#educational-value)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -78,11 +74,23 @@
 
 ## 📱 Screenshots
 
-*Add screenshots here showing:*
 - Main dashboard with algorithm selection
+<img width="1913" height="868" alt="image" src="https://github.com/user-attachments/assets/be1941b7-4b54-4d14-8a8a-4a1739b3aef3" />
+<img width="823" height="874" alt="image" src="https://github.com/user-attachments/assets/ab7c290c-8fd9-4001-8d62-8d2640f744fd" />
+
 - Pathfinding visualization in action
+<img width="1913" height="870" alt="image" src="https://github.com/user-attachments/assets/7fdf941c-623c-4001-8a55-a9b283fec22d" />
+<img width="387" height="339" alt="image" src="https://github.com/user-attachments/assets/f03957cd-648d-48d7-98e2-d276d7a85c83" />
+
+
 - N-Queens solver interface
+<img width="1906" height="789" alt="image" src="https://github.com/user-attachments/assets/1e0a0c1d-b0e8-495f-a981-847a3d9d6816" />
+<img width="1588" height="304" alt="image" src="https://github.com/user-attachments/assets/22bd298c-dfc4-4a0b-9909-ae975079dcff" />
+
+
 - Algorithm comparison table
+  <img width="1604" height="662" alt="image" src="https://github.com/user-attachments/assets/dbe09435-8fdc-4707-9e40-113270e38d7a" />
+
 
 ---
 
@@ -146,7 +154,7 @@
 
 ## 💻 Tech Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Frontend**: HTML5, CSS3, JavaScript
 - **Styling**: Custom CSS with responsive design
 - **Deployment**: Vercel
 - **Version Control**: Git & GitHub
@@ -213,66 +221,15 @@
 
 ---
 
-## 🤝 Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+##  Contact
 
-### How to Contribute
-
-1. **Fork the Project**
-2. **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the Branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
-
-### Contribution Ideas
-
-- 🔄 Add new algorithms (A*, Greedy Best-First Search)
-- 🎨 Improve UI/UX design
-- 📱 Enhance mobile responsiveness
-- 🐛 Bug fixes and performance improvements
-- 📝 Documentation improvements
-- 🌐 Internationalization support
-
----
-
-## 📋 Roadmap
-
-- [ ] **A* Algorithm** implementation
-- [ ] **Maze generation** algorithms
-- [ ] **Sorting algorithms** visualizer
-- [ ] **Mobile app** version
-- [ ] **Collaborative learning** features
-- [ ] **Algorithm comparison** dashboard
-- [ ] **Export visualization** as GIF/Video
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 📞 Contact
-
-**Harshit Singh** - Computer Science Student at DTU (Delhi Technological University)
+**Harshit Singh** - Information Technology Student at DTU (Delhi Technological University)
 
 - 📧 Email: harshit.official.281005@gmail.com
 - 📱 Phone: +91 8076148313
 - 💼 LinkedIn: [Harshit Singh](https://linkedin.com/in/harshit-singh)
 - 🐙 GitHub: [HarshitSingh](https://github.com/harshitsingh)
-
-**Project Link**: [https://github.com/yourusername/algo-viz-hub](https://github.com/yourusername/algo-viz-hub)
-
----
-
-## 🙏 Acknowledgments
-
-- **Delhi Technological University** for providing educational foundation
-- **Algorithm visualization community** for inspiration and best practices
-- **Open source contributors** who make learning accessible to everyone
-- **Vercel** for free hosting and deployment services
 
 ---
 
@@ -288,4 +245,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Made with ❤️ for the computer science learning community*
 
-**[⭐ Star this repo](https://github.com/yourusername/algo-viz-hub)** if you found it helpful!
+**[⭐ Star this repo](https://github.com/harshitzofficial/AlgoViz-Hub)** if you found it helpful!
